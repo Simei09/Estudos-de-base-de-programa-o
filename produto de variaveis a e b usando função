@@ -1,0 +1,29 @@
+##############################################################
+####################   PROGRAMA 1  ###########################
+###    Simei Tarse Sobrinho Santos                         ###
+###  OBJETIVO: CRIAR PROGRAMA DE SOMA                      ###
+###                                                        ###
+### Analise retro-algoritmica _____________________________###
+###  print puxa resultado > resultado puxa função def >    ###
+### função def puxa variaveis                              ###
+###________________________________________________________###                                                       
+###                                                        ###
+###----------------ETAPAS DO PROGRAMA----------------------###
+### 1 - Inserir variaveis  a e b                           ###
+### 2 - Inserir função def produto()                       ###
+### 3 - Chamamos a função como resultado                   ###                                  
+### 4 - imprimimos resultado                               ###
+###                                                        ###
+##############################################################
+##############################################################
+
+print("Calculo de produto de duas variaveis")
+a = float(input("Digite valor de a:\n"))
+b = float(input("Digite valor de b:\n"))
+
+def produto(a,b):
+    return a * b
+
+resultado = produto(a,b)
+
+print(f"O valor do produto é:\n {resultado}")
