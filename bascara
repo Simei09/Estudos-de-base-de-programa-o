@@ -1,0 +1,40 @@
+##############################################################
+####################   PROGRAMA 1  ###########################
+###    Simei Tarse Sobrinho Santos                         ###
+###  OBJETIVO: CRIAR PROGRAMA DE FORMULA DE BASKARA        ###
+###                                                        ###
+### Analise retro-algoritmica _____________________________###
+### print puxa resultado > resultado puxa result x1 e x2 > ###
+### resulta puxa função def delta > função def puxa        ###
+###  variaveis a, b e c                                    ###
+###________________________________________________________###                                   
+###                                                        ###
+###----------------ETAPAS DO PROGRAMA----------------------###
+### 1 - Inserir variaveis  a, b e c                        ###
+### 2 - Inserir função def delta():                        ###
+### 3 - Chamamos a função como resultado x1 e x2           ###                               
+### 4 - imprimimos resultado                               ###
+###                                                        ###
+##############################################################
+##############################################################
+
+
+print("############   FORMULA DE BASCARA ############\n##########  ENCONTRA AS RAIZES X1 E X2  ######")
+
+a = float(input("Inserir valor de a:\n"))
+b = float(input("Inserir valor de b:\n"))
+c = float(input("Inserir valor de c:\n"))
+
+def delta_calcular(a, b, c):
+    return (b)**2 - 4 * a * c
+
+delta = delta_calcular(a, b, c)
+
+if delta < 0:
+    print("Não possui raizes reais!")
+else:
+
+    x1 = (-b + (delta)**(1/2))/(2 * a)
+    x2 = (-b - (delta)**(1/2))/(2 * a)
+
+    print(f"AS raizes são: x1 = {x1} e x2 = {x2}")
